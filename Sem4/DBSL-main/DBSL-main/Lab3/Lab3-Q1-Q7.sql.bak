@@ -1,0 +1,17 @@
+---1.union
+ SELECT course_id FROM section WHERE semester = 'Fall' AND year = 2009
+  2  UNION
+  3  SELECT course_id FROM section WHERE semester = 'Spring' and year = 2010;
+
+COURSE_I
+--------
+CS-101
+CS-315
+CS-319
+CS-347
+FIN-201
+HIS-351
+MU-199
+PHY-101
+
+8 rows selected.

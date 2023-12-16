@@ -1,0 +1,3 @@
+declare
+		gpa StudentTable.GPA%Type;
+		

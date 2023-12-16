@@ -1,0 +1,6 @@
+SQL> select bdate, address from employee
+  2  where fname ='John' and minit='B' and lname ='Smith';
+
+BDATE     ADDRESS
+--------- ------------------------------
+09-JAN-65 731 Fondren, Houston, TX

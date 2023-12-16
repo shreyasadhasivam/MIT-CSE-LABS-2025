@@ -1,0 +1,73 @@
+ 1.
+ create table Employee(
+  2  EmpNo NUMBER(5) PRIMARY KEY,
+  3  EmpName VARCHAR(50) NOT NULL,
+  4  Gender VARCHAR(2) NOT NULL CHECK(Gender='F' OR Gender='M'),
+  5  Salary NUMBER(10) NOT NULL,
+  6  Address VARCHAR(50) NOT NULL,
+  7  DNo NUMBER(10));
+  
+  2.
+   create table Department(
+  2  DeptNo NUMBER(10) PRIMARY KEY,
+  3  DeptName VARCHAR(50) UNIQUE,
+  4  Location VARCHAR(50));
+  
+  3.
+  alter table Employee add constraint FK_DNO FOREIGN KEY(DNO) references Department(DeptNo);
+  
+  4.
+   insert into Department values(1,'Development','karnatka');
+   insert into Department values(2,'operations','karnatka');
+    insert into Department values(3,'administration','karnatka');
+	
+	insert into Employee values(1,'Emp1','F',10000,'Manipal',1);
+
+1 row created.
+
+SQL> insert into Employee values(2,'Emp2','M',10000,'Manipal',2);
+
+1 row created.
+
+SQL> insert into Employee values(3,'Emp3','F',10000,'Manipal',3);
+
+5.
+insert into Employee values(4,'Emp4','N',10000,'Manipal',5);
+insert into Employee values(4,'Emp4','N',10000,'Manipal',5)
+*
+ERROR at line 1:
+ORA-02290: check constraint (F04.SYS_C0016074) violated
+
+insert into department values(1,'Development','assam');
+insert into department values(1,'Development','assam')
+*
+ERROR at line 1:
+ORA-00001: unique constraint (F04.SYS_C0016054) violated
+
+6.
+ insert into department values(4,'Devops', 'assam');
+
+1 row created.
+
+delete from department where deptno in (Select DNO from employee
+  2  group by Dno
+  3  having count(*)>1);
+
+0 rows deleted.
+7.
+> alter table employee drop constraint FK_DNO;
+
+Table altered.
+
+SQL> alter table employee add constraint FK_DNO FOREIGN KEY(DNO) references Department(DeptNo) ON DELETE CASCADE;
+
+8.
+
+ alter table Employee modify(SALARY DEFAULT 10000);
+
+Table altered.
+
+SQL> insert into Employee values(101,'Emp4','F',DEFAULT,'Manipal',3);
+
+1 row created.
+

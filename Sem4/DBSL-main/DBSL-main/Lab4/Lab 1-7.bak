@@ -1,0 +1,11 @@
+Group By:
+1. Find the number of students in each course.
+2. Find those departments where the average number of students are greater than 10.
+3. Find the total number of courses in each department.
+4. Find the names and average salaries of all departments whose average salary is
+greater than 42000.
+5. Find the enrolment of each section that was offered in Spring 2009.
+Ordering the display of Tuples (Use ORDER BY ASC/DESC):
+6. List all the courses with prerequisite courses, then display course id in increasing
+order.
+7. Display the details of instructors sorting the salary in decreasing order. 
