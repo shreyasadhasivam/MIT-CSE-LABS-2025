@@ -1,0 +1,17 @@
+
+q3:7325 terminated with signal 6 at PC=7f389f4969fc SP=7ffd5a905090.  Backtrace:
+/lib/x86_64-linux-gnu/libc.so.6(pthread_kill+0x12c)[0x7f389f4969fc]
+/lib/x86_64-linux-gnu/libc.so.6(raise+0x16)[0x7f389f442476]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0xd3)[0x7f389f4287f3]
+/lib/x86_64-linux-gnu/libc.so.6(+0x89676)[0x7f389f489676]
+/lib/x86_64-linux-gnu/libc.so.6(+0xa0cfc)[0x7f389f4a0cfc]
+/lib/x86_64-linux-gnu/libc.so.6(+0xa17e2)[0x7f389f4a17e2]
+/lib/x86_64-linux-gnu/libc.so.6(+0xa1969)[0x7f389f4a1969]
+/lib/x86_64-linux-gnu/libc.so.6(+0xa2ea0)[0x7f389f4a2ea0]
+/lib/x86_64-linux-gnu/libc.so.6(free+0x73)[0x7f389f4a5453]
+/usr/lib/x86_64-linux-gnu/intel-opencl/libigdrcl.so(+0xb3f2c)[0x7f389aab3f2c]
+/lib/x86_64-linux-gnu/libc.so.6(+0x45495)[0x7f389f445495]
+/lib/x86_64-linux-gnu/libc.so.6(on_exit+0x0)[0x7f389f445610]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d97)[0x7f389f429d97]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80)[0x7f389f429e40]
+./q3(+0x11e5)[0x55e9b3c6d1e5]

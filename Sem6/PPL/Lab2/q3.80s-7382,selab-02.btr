@@ -1,0 +1,10 @@
+
+q3:7382 terminated with signal 11 at PC=7f1c40ca53fe SP=7ffc74afbe30.  Backtrace:
+/lib/x86_64-linux-gnu/libc.so.6(free+0x1e)[0x7f1c40ca53fe]
+/lib/x86_64-linux-gnu/libfabric.so.1(fi_freeinfo+0x38)[0x7f1c40ecb1d8]
+/lib/x86_64-linux-gnu/libmpich.so.12(+0x232fed)[0x7f1c41232fed]
+/lib/x86_64-linux-gnu/libmpich.so.12(PMPI_Finalize+0x16)[0x7f1c410e3026]
+./q3(+0x16e0)[0x5585c1ea96e0]
+/lib/x86_64-linux-gnu/libc.so.6(+0x29d90)[0x7f1c40c29d90]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x80)[0x7f1c40c29e40]
+./q3(+0x11e5)[0x5585c1ea91e5]
