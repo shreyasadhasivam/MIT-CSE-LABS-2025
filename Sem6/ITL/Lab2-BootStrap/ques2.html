@@ -20,10 +20,12 @@
                     alert(bill);
                 })
                 $("#edit-btn").bind("click", function() {
+                    
                     let bill = "User Details Edited!";
                     alert(bill);
                 })
                 $("#delete-btn").bind("click", function() {
+                    $('tr:last-child').remove();
                     let bill = "User deleted!";
                     alert(bill);
                 })
@@ -83,10 +85,10 @@
     </thead>
     <tbody>
     <tr>
-    <td>Prerna Mittal</td>
-    <td>prerna@example.com</td>
+    <td>Shreya  </td>
+    <td>shreya@example.com</td>
     <td>1,25,000</td>
-    <td>Noida</td>
+    <td>manipal</td>
     <td>
         <button type="submit" class="btn btn-outline-primary" id="edit-btn">Edit</button>
         <button type="submit" class="btn btn-outline-danger" id="delete-btn">Delete</button>
