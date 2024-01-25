@@ -1,0 +1,56 @@
+
+<html>
+    <head>
+        <script type="text/javascript" src="jquery-3.7.1.js">
+        </script>
+        <script type="text/javascript>" language="javascript">
+            $(document).ready(
+                function(){
+                    $("#add").click(
+                        function(){
+                            var x=parseInt($("#ip1").val());
+                            var y=parseInt($("#ip2").val());
+                            var z=x+y;
+                            $("#res").val(z);
+                        }
+                    );
+                    $("#sub").click(
+                        function(){
+                            var x=parseInt($("#ip1").val());
+                            var y=parseInt($("#ip2").val());
+                            var z=x-y;
+                            $("#res").val(z);
+                        }
+                    );
+                    $("#mul").click(
+                        function(){
+                            var x=parseInt($("#ip1").val());
+                            var y=parseInt($("#ip2").val());
+                            var z=x*y;
+                            $("#res").val(z);
+                        }
+                    );
+                    $("#div").click(
+                        function(){
+                            var x=parseInt($("#ip1").val());
+                            var y=parseInt($("#ip2").val());
+                            var z=x/y;
+                            $("#res").val(z);
+                        }
+                    );
+                }
+
+            );
+        </script>
+    </head>
+    <body>
+        Enter number 1:<input type="text" id="ip1"><br><br>
+        Enter number 2:<input type="text" id="ip2"><br><br>
+        Result:        <input type="text" id="res" disabled>
+        <br><br>
+        <button id="add">Add</button>
+        <button id="sub">Subtract</button><br><br>
+        <button id="mul">Multiply</button>
+        <button id="div">Divide</button>
+    </body>
+</html>

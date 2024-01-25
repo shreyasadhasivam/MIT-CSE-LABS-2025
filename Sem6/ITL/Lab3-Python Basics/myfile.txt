@@ -1,0 +1,4 @@
+hi hello
+my name is shreya
+this is lab3
+we are learning python basics

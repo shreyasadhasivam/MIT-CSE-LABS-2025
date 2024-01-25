@@ -1,0 +1,57 @@
+
+<html>
+ <head>
+ <title>Q1</title>
+ <script type = "text/javascript" src = "jquery-3.7.1.js">
+ </script>
+<style type="text/css">
+#block {
+    position: absolute;
+    right:250px;
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+}
+</style>
+<script type="text/javascript">
+$(document).ready(function() {
+    $(".odd").css({"background-color":"DodgerBlue"});
+    $(".even").css({"background-color":"SlateBlue"});
+    $( "#animate" ).on( "click", function() {
+  $( "#block" ).animate({ "left": "50px" }, "slow" );
+});
+});
+
+</script>
+</head>
+<body>
+    <br><br>
+    <div  id="block">
+    <table width="300px" height="300px">
+        <tr class="odd">
+            <td>ii</td>
+            <td>ij</td>
+            <td>ik</td>
+        </tr>
+        <tr class="even">
+            <td>ji</td>
+            <td>jj</td>
+            <td>jk</td>
+        </tr>
+        <tr class="odd">
+            <td>ki</td>
+            <td>kj</td>
+            <td>kk</td>
+        </tr>
+       
+    </table>
+    <br><br>
+    <img id = "myimg" src="img.jpg" alt = "Sample image" width="300px" height="100px" />
+    <br><br>
+    
+    <button id="animate">animate!</button>
+    
+</div>
+</body>
+</html>
+
