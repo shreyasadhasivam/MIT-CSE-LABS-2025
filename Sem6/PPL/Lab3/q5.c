@@ -26,8 +26,7 @@ int main(int argc, char* argv[]) {
         
     }
     MPI_Gather(&c,1,MPI_INT,B,1,MPI_INT,0,MPI_COMM_WORLD);
-    MPI_Bcast(&even, 1, MPI_INT, 0, MPI_COMM_WORLD);
-    MPI_Bcast(&odd, 1, MPI_INT, 0, MPI_COMM_WORLD);
+    
     if(rank ==0)
     {
         printf("Resultant array(A): ");

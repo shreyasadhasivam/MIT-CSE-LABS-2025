@@ -2,13 +2,16 @@
 #include <mpi/mpi.h>
 #include <stdlib.h>
 
-void ErrorHandler(int err_code){
-    if(err_code != MPI_SUCCESS){
-        char error_string[BUFSIZ];
-        int length_err_string, err_class;
-        MPI_Error_class(err_code, &err_class);
-        MPI_Error_string(err_code, error_string, &length_err_string);
-        fprintf(stderr, "Error: %d %s\n", err_class, error_string);
+void mpi_check_status ( int mpi_status )
+{
+    if ( mpi_status != MPI_SUCCESS )
+    {
+    int len ;
+    char err_string [ MPI_MAX_ERROR_STRING ];
+    MPI_Error_string ( mpi_status , err_string , & len );
+    fprintf ( stderr , " MPI Error : (% d ) % s \n " ,
+    mpi_status , err_string );
+    exit ( EXIT_FAILURE );
     }
 }
 

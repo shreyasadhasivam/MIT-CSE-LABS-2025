@@ -22,8 +22,8 @@ int main(int argc, char *argv[]) {
     if (rank == 0) {
         printf("Input Array: ");
         for (int i = 0; i < N; ++i) {
-            inputArray[i] = i + 1;
-            printf("%d ", inputArray[i]);
+            scanf("%d", &inputArray[i]);
+            //printf("%d ", inputArray[i]);
         }
         printf("\n");
     }
