@@ -1,0 +1,29 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Student details</title>
+        </head>
+        <body>
+            <script type="text/javascript">
+                function showInput(){
+                    document.getElementById('display').innerHTML = 
+                        document.getElementById("name").value;
+                        document.getElementById("dob").value;
+                        document.getElementById("contact").value;
+                        document.getElementById("email").value;
+                        document.getElementById("engmarks").value;
+
+                }
+            </script>
+            Enter name<input type='text' id ='name'><br>
+            <br>Enter date of birth<input type="date" id="dob"><br>
+            <br>Enter contact<input type="number" id="contact"><br>
+            <br>Enter email id<input type="email" id ="email"><br>
+            <br>Enter English marks<input type ="number" id="engmarks"><br>
+            <br><br><input type="submit" value="Submit" onclick="showInput()">
+            <label>Details: </label>
+            <p><textarea id="display"></textarea></p>
+        </body>
+    </head>
+</html>
