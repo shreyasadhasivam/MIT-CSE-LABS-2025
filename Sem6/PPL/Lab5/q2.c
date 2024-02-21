@@ -9,11 +9,11 @@ int main(void)
 	// Create the two input vectors
 	int i;
 	int LIST_SIZE;
-	printf("Enter how many elements:");
+	printf("Enter number of digits:");
 	scanf("%d",&LIST_SIZE);
 	
 	//Initialize the input vectors
-	printf("Enter the binary values");
+	printf("Enter the digits");
 	int *B = (int*)malloc(sizeof(int)*LIST_SIZE);
 	//Initialize the input vectors
 	for(i = 0; i < LIST_SIZE; i++)
